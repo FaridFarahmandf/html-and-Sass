@@ -7,10 +7,24 @@
 }
 
 h1 {
-  color: blue;
+  color: #326dee;
+  margin-bottom: 0.75rem;
 }
 
 h1 a {
-  text-decoration: none;
-  color: red;
+  color: #d32752;
+  margin-bottom: 0.75rem;
+}
+
+p {
+  color: #1ac988;
+  margin-bottom: 0.75rem;
+}
+
+button {
+  background-color: #1ac888;
+  border: 1px solid #1ac988;
+  padding: 0.75rem;
+  margin: 0.75rem;
+  border-radius: 10px;
 }
