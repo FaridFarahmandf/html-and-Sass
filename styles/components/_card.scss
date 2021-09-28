@@ -1,0 +1,25 @@
+@use 'sass:math' ;
+.card {
+    box-shadow: $base-box-shadow;
+    border: $base-border-width $base-border-type #ddd;
+    padding: $base-padding;
+    margin: $base-margin;
+    border-radius: math.div($base-border-radius,2);
+
+    .card-title {
+        font-size: $font-size-lg;
+        font-weight: 700;
+        color: black;
+    }
+    .card-body {
+        font-size: $base-font-size;
+        color: $primary;
+        a {
+            text-decoration: underline;
+            color: $secondary;
+        }
+    }
+}
+@debug "Hi Farid" ;
+@debug math.floor(2.3) ;
+@debug math.max(10,30,4,40,2);

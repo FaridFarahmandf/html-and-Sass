@@ -28,3 +28,24 @@ button {
   margin: 0.75rem;
   border-radius: 10px;
 }
+
+.card {
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  margin: 0.75rem;
+  border-radius: 5px;
+}
+.card .card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: black;
+}
+.card .card-body {
+  font-size: 1rem;
+  color: #326dee;
+}
+.card .card-body a {
+  text-decoration: underline;
+  color: #1ac988;
+}
