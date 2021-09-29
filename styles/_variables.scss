@@ -6,6 +6,26 @@ $secondary : #1ac988;
 $error:#d32752 ;
 $info:#f6c31c ;
 
+//color pallet 
+$colors:(
+    "primary":$primary ,
+    "secondary":$secondary ,
+    "error":$error,
+    "info":$info,
+    "blue":#1919e6,
+    "red":#e61919,
+    "yellow":#e6e619,
+    "green":#19e635,
+    "orange":#ffa600,
+    "purple":#9900ff,
+    "black":black ,
+    "white":white,
+);
+// @debug map-get($colors,"green");
+// @debug map-has-key($colors , "primary" );
+// @debug map-has-key($colors , "brown" );
+// @debug map-remove($colors,"black");
+// @debug map-merge($colors,("pink":#ffc0cb));
 //paddings and margins 
 $base-padding : 0.75rem ;
 $base-margin : 0.75rem ;

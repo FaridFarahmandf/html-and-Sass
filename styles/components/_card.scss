@@ -1,7 +1,7 @@
 @use 'sass:math' ;
 .card {
     box-shadow: $base-box-shadow;
-    border: $base-border-width $base-border-type #ddd;
+    border: $base-border-width $base-border-type map-get($colors,"yellow");
     padding: $base-padding;
     margin: $base-margin;
     border-radius: math.div($base-border-radius,2);
@@ -20,6 +20,6 @@
         }
     }
 }
-@debug "Hi Farid" ;
-@debug math.floor(2.3) ;
-@debug math.max(10,30,4,40,2);
+// @debug "Hi Farid" ;
+// @debug math.floor(2.3) ;
+// @debug math.max(10,30,4,40,2);
