@@ -1,0 +1,60 @@
+$beakpoints:(
+    "xs": 0 , 
+    "sm": 480px , 
+    "md": 720px , 
+    "lg": 960px , 
+    "xl": 1200px , 
+);
+@mixin xs {
+    @media (min-width:map-get($beakpoints , "xs" )){
+        @content ;
+    }
+}
+@mixin sm {
+    @media (min-width:map-get($beakpoints , "sm" )){
+        @content ;
+    }
+}
+@mixin md {
+    @media (min-width:map-get($beakpoints , "md" )){
+        @content ;
+    }
+}
+@mixin lg {
+    @media (min-width:map-get($beakpoints , "lg" )){
+        @content ;
+    }
+}
+@mixin xl {
+    @media (min-width:map-get($beakpoints , "xl" )){
+        @content ;
+    }
+}
+
+@mixin breakpoint($bp){
+    @media (min-width:$bp) {
+        @content ;
+    }
+}
+
+.responsive-test {
+    @include xs {
+        color: $primary;
+    }
+    @include sm {
+        color: $secondary;
+    }
+    @include md {
+        color: $info;
+    }
+    @include lg {
+        color: $error;
+    }
+    @include xl {
+        color: purple;
+    }
+    @include breakpoint(1400px){
+        color: chocolate;
+    }
+
+}

@@ -25,6 +25,9 @@ p {
     color: $secondary;
     margin-bottom: $base-margin;
 }
+a {
+    text-decoration: none;
+}
 button {
     background-color: #1ac888;
     border: $base-border-width $base-border-type $secondary;

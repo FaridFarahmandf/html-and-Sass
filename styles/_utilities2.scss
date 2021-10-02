@@ -1,0 +1,33 @@
+@use 'sass:math';
+$utilities2:(
+    "padding":(
+        "prefix":"pad",
+        "values":(
+            "0": 0 ,
+            "1": $base-padding ,
+            "2": $base-padding * 2 ,
+            "3": $base-padding * 4 ,
+            "4": $base-padding * 6 ,
+            "5": $base-padding * 8 ,
+        )
+    )
+);
+
+@each $key , $val in $utilities2 {
+    $prefix : map-get($val , "prefix" ) ;
+    $values : map-get($val , "values" ) ;
+    // @debug $prefix ;
+    // @debug $values ;
+    @each $k , $v in $values {
+        @if ($k == "default") {
+            .#{$prefix}{
+                #{$key}:#{$v} ;
+            }
+        }
+        @else {
+            .#{$prefix}-#{$k}{
+                #{$key}:#{$v}
+            }
+        }
+    }
+}

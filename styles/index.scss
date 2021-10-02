@@ -1,10 +1,15 @@
 //variables and functions
+@import 'functions';
 @import 'variables' ;
 
 //base and layout
 @import 'base' ;
+@import 'breakpoints';
 //color
-
+@import 'color' ;
 //components(button , card , ...) 
-@import 'components/card'
+@import 'components/card';
+@import 'components/button';
 //utilities (margin , padding , opacity) 
+@import 'utilities';
+@import 'utilities2';
