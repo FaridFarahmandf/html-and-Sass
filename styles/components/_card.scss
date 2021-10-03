@@ -1,9 +1,9 @@
 @use 'sass:math' ;
 .card {
+    display: block;
     box-shadow: $base-box-shadow;
-    border: $base-border-width $base-border-type map-get($colors,"yellow");
+    border: $base-border-width $base-border-type #ddd;
     padding: $base-padding;
-    margin: $base-margin;
     border-radius: math.div($base-border-radius,2);
 
     .card-title {
@@ -13,10 +13,13 @@
     }
     .card-body {
         font-size: $base-font-size;
-        color: $primary;
+        color: #3b3b3b;
         a {
             text-decoration: underline;
             color: $secondary;
+        }
+        p{
+            color: #909090;
         }
     }
 }
