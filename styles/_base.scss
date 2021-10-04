@@ -8,25 +8,11 @@
     box-sizing: border-box;
     font-family: 'Yaldevi', sans-serif;
 }
-
-
-h1 {
-    color: $primary; 
-    margin-bottom: $base-margin;
-}
-
-h1 {
-    a {
-        color:$error;
-        margin-bottom: $base-margin;
-    }
-}
-p {
-    color: $secondary;
-    margin-bottom: $base-margin;
-}
 a {
     text-decoration: none;
+}
+li{
+    list-style: none;
 }
 button {
     background-color: #1ac888;
